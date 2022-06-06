@@ -1,0 +1,70 @@
+{
+  "gui": {
+    "addSpriteButton": {
+      "idOfLocation": "renderer",
+      "redirect": "addSprite.html",
+      "DOMElement": {
+        "tag": "input",
+        "id": "addSpriteButton",
+        "type": "button",
+        "redirectEvent": "click",
+        "value": "Add Sprite"
+      }
+    }
+  },
+  "renderer": {
+    "idOfLocation": "renderer",
+    "width": 1500,
+    "height": 900
+  },
+  "entities": [
+    {
+      "name": "BoDown",
+      "pathToFolder": "Resources//Bo//",
+      "numberOfFrames": 4,
+      "fileExtention": ".png",
+      "width": 75,
+      "height": 75,
+      "animationSpeed": 0.15
+    },
+    {
+      "name": "BoLeft",
+      "pathToFolder": "Resources//BoLeft//",
+      "numberOfFrames": 4,
+      "fileExtention": ".png",
+      "width": 75,
+      "height": 75,
+      "animationSpeed": 0.15
+    },
+    {
+      "name": "BoRight",
+      "pathToFolder": "Resources//BoRight//",
+      "numberOfFrames": 4,
+      "fileExtention": ".png",
+      "width": 75,
+      "height": 75,
+      "animationSpeed": 0.15
+    },
+    {
+      "name": "Hedge_tile",
+      "pathToFolder": "Resources//Bo//",
+      "fileExtention": ".png",
+      "width": 75,
+      "height": 75
+    },
+    {
+      "name": "path_tile",
+      "pathToFolder": "Resources//Bo//",
+      "fileExtention": ".png",
+      "width": 75,
+      "height": 75
+    },
+    {
+      "name": "hedge_tile_mid",
+      "pathToFolder": "Resources//Bo//",
+      "fileExtention": ".png",
+      "width": 75,
+      "height": 75
+    }
+  ]
+}
