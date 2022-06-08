@@ -69,7 +69,7 @@ function Agent(x,y,width,height, direction, framesPerDirectionUnit, animationSpe
                 this.spriteToRender = this.replaceSprite(this.spriteToRender, this.rightTextures, this.location);
                 break; 
             case "Up":
-                this.spriteToRender = this.replaceSprite(this.spriteToRender, this.downTextures, this.location);
+                this.spriteToRender = this.replaceSprite(this.spriteToRender, this.upTextures, this.location);
                 break;
             case "Down":
                 this.spriteToRender = this.replaceSprite(this.spriteToRender, this.downTextures, this.location);

@@ -12,17 +12,20 @@ function init(specs) {
     let BoDownArray = [];
     let BoRightArray = [];
     let BoLeftArray = [];
+    let BoUpArray = [];
 
     let BoDown  = specs.entities[0];
-    let BoLeft  = specs.entities[1];
-    let BoRight = specs.entities[2];
-    let hedge   = specs.entities[3];
-    let dirt    = specs.entities[4];
-    let midHedge= specs.entities[5];
+    let BoLeft  = specs.entities[2];
+    let BoUp    = specs.entities[1];
+    let BoRight = specs.entities[3];
+    let hedge   = specs.entities[4];
+    let dirt    = specs.entities[5];
+    let midHedge= specs.entities[6];
     
     loadTextures(BoDownArray, BoDown.pathToFolder , BoDown.fileExtention, BoDown.numberOfFrames);
     loadTextures(BoRightArray, BoRight.pathToFolder , BoRight.fileExtention, BoRight.numberOfFrames);
     loadTextures(BoLeftArray, BoLeft.pathToFolder , BoLeft.fileExtention, BoLeft.numberOfFrames);
+    loadTextures(BoUpArray, BoUp.pathToFolder , BoUp.fileExtention, BoUp.numberOfFrames);
 
   
 
@@ -71,7 +74,7 @@ function init(specs) {
         }
 
         var BoboboSprite = new Agent(initPlayer[1] * BoDown.width, initPlayer[0] * BoDown.height, BoDown.width, BoDown.height, null, 20, BoDown.animationSpeed , app.stage, directions);
-        BoboboSprite.loadTextures(BoDownArray, BoDownArray, BoLeftArray, BoRightArray);   
+        BoboboSprite.loadTextures(BoUpArray, BoDownArray, BoLeftArray, BoRightArray);   
 
         app.ticker.add((delta) => {
             BoboboSprite.update();
